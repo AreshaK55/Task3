@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Task3_520">
         <activity
+            android:name=".Acitivity5"
+            android:exported="true" />
+        <activity
             android:name=".Activity4"
             android:exported="true" />
         <activity
