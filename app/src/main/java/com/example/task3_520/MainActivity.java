@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 Intent viewIntent = new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://github.com/sameerabdullah/Quiz-APP"));
+                        Uri.parse("https://github.com/AreshaK55/Task3"));
                 startActivity(viewIntent);
             }
         });

@@ -47,7 +47,7 @@
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rollno"
-        app:srcCompat="@drawable/motivation" />
+        app:srcCompat="@drawable/new1" />
 
     <Button
         android:id="@+id/b1"
