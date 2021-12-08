@@ -1,5 +1,6 @@
 package com.example.task3_520;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -23,7 +24,13 @@ public class Activity5 extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         String value = extras.getString("key");
-
+//actionbar
+        ActionBar actionBar = getSupportActionBar();
+        //set actionbar title(Optional)
+        actionBar.setTitle("Start page");
+        //set back button
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
         tvScore.setText(value);
 
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -43,4 +50,11 @@ public class Activity5 extends AppCompatActivity {
 
 
     }
+ //handle onBack pressed(go previous activity)
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
 }

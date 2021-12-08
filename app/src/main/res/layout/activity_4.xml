@@ -28,10 +28,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintHorizontal_bias="0.677"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintVertical_bias="0.479" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -82,12 +82,12 @@
 
     <Button
         android:id="@+id/btnNext"
-        android:layout_width="329dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="160dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="4dp"
         android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
@@ -104,24 +104,24 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/showScore"
         android:layout_width="112dp"
         android:layout_height="69dp"
-        android:layout_marginTop="236dp"
-        android:text="TextView"
+        android:layout_marginTop="172dp"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintHorizontal_bias="0.297"
         app:layout_constraintStart_toEndOf="@+id/msg"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="261dp"
-        android:layout_height="77dp"
+        android:layout_width="181dp"
+        android:layout_height="52dp"
         android:layout_marginStart="88dp"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="112dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Finished"
@@ -129,7 +129,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -137,28 +137,27 @@
         android:id="@+id/msg"
         android:layout_width="131dp"
         android:layout_height="74dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Your Score : "
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.314"
+        app:layout_constraintHorizontal_bias="0.167"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <Button
         android:id="@+id/btn1"
-        android:layout_width="250dp"
-        android:layout_height="91dp"
-        android:layout_marginBottom="284dp"
+        android:layout_width="129dp"
+        android:layout_height="60dp"
         android:text="SHARE"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintHorizontal_bias="0.847"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/msg"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.979" />
 </androidx.constraintlayout.widget.ConstraintLayout>

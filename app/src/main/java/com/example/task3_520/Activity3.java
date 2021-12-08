@@ -1,5 +1,6 @@
 package com.example.task3_520;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -42,7 +43,13 @@ public class Activity3 extends AppCompatActivity {
         tvQuestion= findViewById(R.id.textQuestion);
         tvScore= findViewById(R.id.textScore);
         tvQuestionNo= findViewById(R.id.textQuestionNo);
-
+//actionbar
+        ActionBar actionBar = getSupportActionBar();
+        //set actionbar title(Optional)
+        actionBar.setTitle("Start page");
+        //set back button
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
         radioGroup= findViewById(R.id.radioGroup);
         rb1= findViewById(R.id.rb1);
         rb2= findViewById(R.id.rb2);
@@ -143,4 +150,12 @@ public class Activity3 extends AppCompatActivity {
         questionsList.add(new QuestionModel(" The Arabic Letters 'ق' Sounds Produced from?","Middle of Throat","End of Throat","Base of Tongue","None",3));
         questionsList.add(new QuestionModel(" The Arabic Letters 'باَ' Sounds Produced from?","End of Throat","Middle of Throat","Base of Tongue","Mouth empty space",4));
     }
+   //handle onBack pressed(go previous activity)
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+
 }
